@@ -9,7 +9,9 @@ export default function Hero() {
           <h2 className="text-5xl font-mono font-bold mb-4">Kris Ch</h2>
           <p className="text-xl text-gray-300 font-mono mb-2">
             Software Engineer →{" "}
-            <span className="text-green-300">Cybersecurity</span>
+            <span className="text-green-300 hover:text-green-500 transition">
+              Cybersecurity
+            </span>
           </p>
           <p className="text-gray-400 font-mono max-w-2xl mb-6">
             I build secure, reliable and user-focused applications. I'm

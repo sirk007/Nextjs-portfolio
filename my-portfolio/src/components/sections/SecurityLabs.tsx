@@ -1,3 +1,4 @@
+import BlogCarousel from "../dynamic/BlogCarousel";
 export default function SecurityLabs() {
   return (
     <section>
@@ -23,7 +24,7 @@ export default function SecurityLabs() {
               scripts and other resources that I find useful in my journey.
             </p>
 
-            {/* Key Achievements - Bullet Points */}
+            {/* Bullet Points */}
             <ul className="space-y-1 text-xs text-gray-400 font-mono">
               <li className="flex items-start gap-2">
                 <span className="text-green-700 mt-0.5">▸</span>
@@ -87,11 +88,7 @@ export default function SecurityLabs() {
           <div className=" p-4 bg-slate-950">
             {" "}
             {/* Project Header */}
-            <div className="flex justify-between items-start mb-2">
-              <h3 className="text-lg font-mono font-bold">Something Here</h3>
-            </div>
-            {/* Description */}
-            {/* Key Achievements - Bullet Points */}
+            <BlogCarousel />
           </div>
         </div>
       </div>

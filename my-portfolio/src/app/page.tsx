@@ -1,6 +1,6 @@
-import Hero from "./components/Hero";
-import FeaturedProjects from "./components/FeaturedProjects";
-import SecurityLabs from "./components/SecurityLab";
+import Hero from "@/components/sections/Hero";
+import FeaturedProjects from "@/components/sections/FeaturedProjects";
+import SecurityLabs from "@/components/sections/SecurityLabs";
 
 export default function Home() {
   return (
