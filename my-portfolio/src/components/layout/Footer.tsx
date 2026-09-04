@@ -4,85 +4,91 @@ export default function Footer() {
       <div className="container mx-auto px-4">
         {/* 4 Column Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+          
           {/* Column 1: Let's Work Together */}
           <div>
-            <p className="font-mono text-lg font-bold mb-2">
+            <p className="font-mono text-lg font-bold mb-2 text-green-700">
               Let's work together
             </p>
             <p className="font-mono text-sm text-gray-400">
-              I'm open to internship oppertunities where I can contribute, learn
+              I'm open to internship opportunities where I can contribute, learn
               and grow as a cybersecurity professional.
             </p>
             <a
               href="/contact"
-              className="inline-block mt-3 font-mono text-sm text-green-700 hover:text-green-500 transition border border-green-700/30 px-4 py-1.5 rounded hover:border-green-500"
+              className="inline-block mt-3 font-mono text-sm text-green-700 hover:text-green-500 transition border border-green-700/30 px-4 py-1.5 rounded hover:border-green-500 hover:bg-green-700/10"
             >
               Get in touch →
             </a>
           </div>
 
-          {/* Column 2: Security First */}
+          {/* Column 2: Security Focus */}
           <div>
-            <p className="font-mono text-lg font-bold mb-2">Security First</p>
+            <p className="font-mono text-lg font-bold mb-2 text-green-700">
+              Security Focus
+            </p>
             <ul className="font-mono text-sm text-gray-400 space-y-1.5">
-              <li>
-                <span className="text-green-700">✔</span> Dummy Text for now
+              <li className="flex items-start gap-2">
+                <span className="text-green-700 mt-0.5">▸</span>
+                Web Application Security
               </li>
-
-              <li>
-                <span className="text-green-700">✔</span> Dummy Text for now
+              <li className="flex items-start gap-2">
+                <span className="text-green-700 mt-0.5">▸</span>
+                Penetration Testing
               </li>
-              <li>
-                <span className="text-green-700">✔</span> Dummy Text for now
+              <li className="flex items-start gap-2">
+                <span className="text-green-700 mt-0.5">▸</span>
+                Secure Programming
               </li>
-              <li>
-                <span className="text-green-700">✔</span> Dummy Text for now
+              <li className="flex items-start gap-2">
+                <span className="text-green-700 mt-0.5">▸</span>
+                Incident Response
               </li>
             </ul>
           </div>
 
-          {/* Column 3: Live Stats */}
+          {/* Column 3: Quick Stats */}
           <div>
-            <p className="font-mono text-lg font-bold mb-2">Live Stats</p>
+            <p className="font-mono text-lg font-bold mb-2 text-green-700">
+              Quick Stats
+            </p>
             <div className="space-y-2 font-mono text-sm">
-              <div>
-                <span className="text-gray-400">Projects:</span>
-                <span className="text-green-700 ml-2">x</span>
+              <div className="flex justify-between border-b border-gray-800/50 pb-1">
+                <span className="text-gray-400">Projects</span>
+                <span className="text-green-700">3</span>
               </div>
-              <div>
-                <span className="text-gray-400">Write-ups:</span>
-                <span className="text-green-700 ml-2">x</span>
+              <div className="flex justify-between border-b border-gray-800/50 pb-1">
+                <span className="text-gray-400">Education</span>
+                <span className="text-green-700">4</span>
               </div>
-              <div>
-                <span className="text-gray-400">Technologies:</span>
-                <span className="text-green-700 ml-2">x</span>
+              <div className="flex justify-between border-b border-gray-800/50 pb-1">
+                <span className="text-gray-400">Tech Stack</span>
+                <span className="text-green-700">15+</span>
               </div>
-              <div>
-                <span className="text-gray-400">Coffee Consumed:</span>
-                <span className="text-green-700 ml-2 text-xl">∞</span>
+              <div className="flex justify-between">
+                <span className="text-gray-400">Currently</span>
+                <span className="text-green-700 animate-pulse">Cybersecurity</span>
               </div>
             </div>
           </div>
 
           {/* Column 4: Currently Learning */}
           <div>
-            <p className="font-mono text-lg font-bold mb-2">
+            <p className="font-mono text-lg font-bold mb-2 text-green-700">
               Currently Learning
             </p>
-            <ul className="font-mono text-sm text-gray-400 space-y-1.5">
-              <li>
-                <span className="border-2 border-solid px-1 rounded">
-                  Penetration Testing
-                </span>
+            <ul className="font-mono text-sm text-gray-400 space-y-2">
+              <li className="bg-gray-900/50 p-2 rounded border border-green-700/20">
+                <span className="text-green-700 font-bold">Rust</span>
+                <span className="block text-xs text-gray-500">Systems programming</span>
               </li>
-              <li>
-                <span className="text-green-700">x</span> — x
+              <li className="bg-gray-900/50 p-2 rounded border border-green-700/20">
+                <span className="text-green-700 font-bold">Kubernetes</span>
+                <span className="block text-xs text-gray-500">Container orchestration</span>
               </li>
-              <li>
-                <span className="text-green-700">x</span> x
-              </li>
-              <li>
-                <span className="text-green-700">x</span> — x
+              <li className="bg-gray-900/50 p-2 rounded border border-green-700/20">
+                <span className="text-green-700 font-bold">AI Security</span>
+                <span className="block text-xs text-gray-500">ML threat detection</span>
               </li>
             </ul>
           </div>
@@ -91,27 +97,30 @@ export default function Footer() {
         {/* Bottom Bar */}
         <div className="border-t border-gray-800 mt-8 pt-4 flex flex-col sm:flex-row justify-between items-center gap-2">
           <div className="font-mono text-xs text-gray-500">
-            <span className="text-green-700">$</span> echo "©{" "}
-            {new Date().getFullYear()} Kris Ch — All rights reserved"
+            <span className="text-green-700">$</span> echo "© {new Date().getFullYear()} Kris Ch — All rights reserved"
           </div>
-          <div className="flex gap-4 font-mono text-xs">
+          <div className="flex gap-6 font-mono text-xs">
             <a
-              href="#"
+              href="https://github.com/yourusername"
+              target="_blank"
+              rel="noopener noreferrer"
               className="text-gray-500 hover:text-green-700 transition"
             >
-              Privacy
+              GitHub
             </a>
             <a
-              href="#"
+              href="https://linkedin.com/in/yourusername"
+              target="_blank"
+              rel="noopener noreferrer"
               className="text-gray-500 hover:text-green-700 transition"
             >
-              Terms
+              LinkedIn
             </a>
             <a
-              href="#"
+              href="mailto:your.email@example.com"
               className="text-gray-500 hover:text-green-700 transition"
             >
-              Sitemap
+              Email
             </a>
           </div>
         </div>
