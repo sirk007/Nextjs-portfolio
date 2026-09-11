@@ -1,3 +1,4 @@
+import Link from "next/link";
 import BlogCarousel from "../dynamic/BlogCarousel";
 export default function SecurityLabs() {
   return (
@@ -47,12 +48,12 @@ export default function SecurityLabs() {
                 <span>Cybersecurity Write-ups</span>
               </li>
             </ul>
-            <a
+            <Link
               href="/projects"
               className="text-green-300 font-mono text-sm hover:text-green-500 transition"
             >
               Explore Security Lab →
-            </a>
+            </Link>
           </div>
 
           {/* Middle Column */}

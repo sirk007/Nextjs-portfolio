@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Hero() {
   return (
     <section className="py-16">
@@ -19,18 +21,18 @@ export default function Hero() {
             projects and continuous learning.
           </p>
           <div className="flex gap-4">
-            <a
+            <Link
               href="/projects"
               className="px-6 py-2 bg-green-700 text-white font-mono rounded hover:bg-green-600 transition"
             >
               View My Work
-            </a>
-            <a
+            </Link>
+            <Link
               href="/cv.pdf"
               className="px-6 py-2 border border-green-700 text-green-700 font-mono rounded hover:bg-green-700 hover:text-white transition"
             >
               Download CV
-            </a>
+            </Link>
           </div>
         </div>
 
@@ -62,7 +64,7 @@ export default function Hero() {
             <h3 className="text-green-300">
               &gt; location:<span className="text-white"> Ireland</span>
             </h3>
-            <br></br>
+            <br />
             <h3 className="text-green-300">
               &gt; mission:
               <span className="text-white"> Building Software,</span>
@@ -71,7 +73,7 @@ export default function Hero() {
             </h3>
           </div>
         </div>
-      </div>{" "}
+      </div>
     </section>
   );
 }

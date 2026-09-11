@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 /**
  * ======================================================================
  * FOOTER
@@ -37,12 +39,12 @@ export default function Footer() {
               I'm open to opportunities in cybersecurity and full-stack
               engineering — where I can contribute, learn and grow.
             </p>
-            <a
+            <Link
               href="/contact"
               className="inline-block mt-3 font-mono text-sm text-green-700 hover:text-green-500 transition border border-green-700/30 px-4 py-1.5 rounded hover:border-green-500 hover:bg-green-700/10"
             >
               Get in touch →
-            </a>
+            </Link>
           </div>
 
           {/* ========================================================
@@ -132,8 +134,11 @@ export default function Footer() {
         </div>
 
         {/* ============================================================
-            BOTTOM BAR — copyright + social links
-            ============================================================ */}
+            BOTTOM BAR — copyright + external links
+            ============================================================
+            All links in this section are external (https:// or mailto:),
+            so they stay as <a> — no basePath needed.
+        */}
         <div className="border-t border-gray-800 mt-8 pt-4 flex flex-col sm:flex-row justify-between items-center gap-2">
           <div className="font-mono text-xs text-gray-500">
             <span className="text-green-700">$</span> echo "©{" "}

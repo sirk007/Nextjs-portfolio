@@ -1,3 +1,4 @@
+import Link from "next/link";
 export default function ExperienceHighlights() {
   const experiences = [
     {
@@ -7,8 +8,8 @@ export default function ExperienceHighlights() {
       achievements: [
         "Worked flexible 8-hour shifts, including mornings and evenings",
         "Updated daily sales in the database and managed customer credit accounts",
-        "Performed cash drops to the safe and handled opening/closing as a key holder"
-      ]
+        "Performed cash drops to the safe and handled opening/closing as a key holder",
+      ],
     },
     {
       title: "Sales & Fundraising Representative",
@@ -18,9 +19,9 @@ export default function ExperienceHighlights() {
         "Conducted door-to-door sales and fundraising for the Irish Cancer Society",
         "Met daily target of 120+ doors knocked and weekly sales goals",
         "Educated potential donors and handled objections",
-        "Participated in team meetings to discuss strategies and share best practices"
-      ]
-    }
+        "Participated in team meetings to discuss strategies and share best practices",
+      ],
+    },
   ];
 
   return (
@@ -28,18 +29,18 @@ export default function ExperienceHighlights() {
       <div className="border-l border-r border-b border-gray-700 p-4 bg-slate-950">
         <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-2 mb-4">
           <h2 className="text-xl font-mono font-bold">Experience Highlights</h2>
-          <a 
-            href="/experience" 
+          <Link
+            href="/experience"
             className="text-green-300 font-mono text-sm hover:text-green-500 transition"
           >
             View Full Experience →
-          </a>
+          </Link>
         </div>
-        
+
         {/* Two Column Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
           {experiences.map((exp, index) => (
-            <div 
+            <div
               key={index}
               className="bg-gray-900/50 rounded-lg border border-green-700/30 p-4 hover:border-green-700 transition hover:-translate-y-0.5 hover:shadow-lg hover:shadow-green-700/5 h-full flex flex-col"
             >
@@ -56,7 +57,10 @@ export default function ExperienceHighlights() {
               </p>
               <ul className="space-y-1.5 flex-1">
                 {exp.achievements.map((achievement, idx) => (
-                  <li key={idx} className="flex items-start gap-2 text-sm text-gray-300 font-mono">
+                  <li
+                    key={idx}
+                    className="flex items-start gap-2 text-sm text-gray-300 font-mono"
+                  >
                     <span className="text-green-700 mt-0.5">▸</span>
                     {achievement}
                   </li>

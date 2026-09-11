@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function FeaturedProjects() {
   return (
     <section>
@@ -5,12 +7,12 @@ export default function FeaturedProjects() {
         {/* Header with flex */}
         <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-2 mb-4">
           <h2 className="text-xl font-mono font-bold">Featured Projects</h2>
-          <a
+          <Link
             href="/projects"
             className="text-green-300 font-mono text-sm hover:text-green-500 transition"
           >
             View All Projects →
-          </a>
+          </Link>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
           {/* Left Column */}
