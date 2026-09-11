@@ -5,6 +5,7 @@ const nextConfig = {
   basePath: process.env.NODE_ENV === "production" ? "/Nextjs-portfolio" : "",
   assetPrefix:
     process.env.NODE_ENV === "production" ? "/Nextjs-portfolio/" : "",
+  trailingSlash: true,
 };
 
 export default nextConfig;
