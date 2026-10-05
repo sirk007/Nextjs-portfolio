@@ -27,12 +27,13 @@ export default function Hero() {
             >
               View My Work
             </Link>
-            <Link
-              href="/cv.pdf"
+            <a
+              href="./Kris_CV_2026.pdf"
+              download="Kris_CV_2026.pdf"
               className="px-6 py-2 border border-green-700 text-green-700 font-mono rounded hover:bg-green-700 hover:text-white transition"
             >
               Download CV
-            </Link>
+            </a>
           </div>
         </div>
 
